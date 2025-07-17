@@ -1,0 +1,84 @@
+h1 {
+    text-align: center;
+    color: aqua;
+    display: inline-block;
+    font-family: 'Arial', sans-serif;
+    font-size: 2rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Add a soft shadow */
+}
+
+#ball {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #e464e8, #a832d9); /* Add a gradient */
+    animation: bounce 5s infinite; /* Bouncing animation */
+    transition: height 3s ease-in-out;
+    border: 3px solid blue;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Depth with shadow */
+}
+
+/* Define the bounce animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateX(200px);
+    }
+    50% {
+        transform: translateX(-200px);
+    }
+}
+
+#body {
+    display: flex; /* Centering elements */
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #f3cce6, #c99fe2); /* Gradient background */
+    height: 100vh;
+    margin: 0; /* Remove default margin */
+    
+}
+#n{
+    width:100px;
+    height: 25px;
+    border-radius:5px;
+    border-width:4px;
+    border-color:silver;
+    
+}
+
+#btn {
+    background-color: rgb(175, 89, 202); /* Purple button */
+    color: white; /* White text */
+    border: 2px solid rgba(60, 13, 107, 0.81); /* Add border */
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Verdana', sans-serif;
+    font-size: 1rem;
+    margin: 10px;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2); /* Add shadow */
+    transition: all 0.3s ease-in-out;
+}
+
+#btn:hover {
+    opacity: 0.9;
+    transform: scale(1.1); /* Add scaling effect */
+    box-shadow: 0 0 10px rgba(175, 89, 202, 0.8); /* Glow effect */
+}
+
+p {
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(145deg, #ffdcb0, #d9a67b); /* Gradient for the box */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2); /* Add depth */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Georgia', serif;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #5a3e1b;
+    margin-top: 20px;
+}

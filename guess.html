@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div id="body">
+        <div id="ball"></div>
+        <h1>Guess the 3 Digit Number</h1>
+        <input id="n" type="number" placeholder="Enter your guess (0-9)" min="0" max="9">
+        <button id="btn" onclick="check()">Check</button>
+        <p id="hint">Clue: You have 12 chances</p>
+    </div>
+    <script src="script1.js">
+        // Function to launch confetti
+        function launchConfetti() {
+            confetti({
+              particleCount: 100,      // Number of particles
+              spread: 70,              // Spread of the confetti
+              origin: { y: 0.6 }       // Position from where confetti will pop
+            });
+          }
+      
+          // Run the function on page load
+          window.onclick = function() {
+            launchConfetti();
+          };
+        </script>
+</body>
+</html>
